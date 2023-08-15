@@ -7,10 +7,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header: React.FC<HeaderProps> = ({ pageY }) => {
-  console.log(pageY);
-
   let mobileView = window.matchMedia("(max-width: 1024px)").matches;
-  console.log(mobileView);
+  // console.log(mobileView);
 
   const [toggle, setToggle] = useState<boolean>(false);
 

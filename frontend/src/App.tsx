@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import { Outlet } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setPosition, setMobileView } from "./slices/positionSlice";
@@ -23,6 +25,7 @@ const App: React.FC = () => {
     <>
       <Header pageY={pageY} />
       <Outlet />
+      <Footer />
     </>
   );
 };
